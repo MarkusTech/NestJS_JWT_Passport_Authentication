@@ -8,7 +8,7 @@ module.exports = {
   plugins: ['@typescript-eslint/eslint-plugin'],
   extends: [
     'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended', // Integrates Prettier with ESLint
   ],
   root: true,
   env: {
@@ -21,5 +21,13 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'lf', // Enforce LF line endings
+        singleQuote: true,
+        trailingComma: 'all',
+      },
+    ],
   },
 };
