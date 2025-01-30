@@ -35,5 +35,3 @@ npm i --save @nestjs/passport passport passport-local passport-jwt
 npm i --save @nestjs/jwt
 npm i --save-dev @types/passport-jwt @types/passport-local
 
-55
-https://www.youtube.com/watch?v=S8Cjx5ua2JU&ab_channel=MichaelGuay
